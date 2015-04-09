@@ -216,6 +216,7 @@ exports.getUsersForRoom = function(data, cb) {
       a[b._id] = b;
       return a;
     }, {});
+    console.log('USER OBJ!!!!!!!!!!', usersObj);
     cb(usersObj);
   });
 };

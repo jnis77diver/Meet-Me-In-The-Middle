@@ -18,38 +18,9 @@ mongoose.connect(config.mongo.uri, config.mongo.options);
 if(config.seedDB) { require('./config/seed'); }
 
 // Setup server
-<<<<<<< Updated upstream
 var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
-=======
-var app = express();
-var server = require('http').createServer(app);
-//Ko: Socket is hooked here
-// var socketio = require('socket.io')(server, {
-//   serveClient: (config.env === 'production') ? false : true,
-//   path: '/socket.io-client'
-// });
-// //Ko: Server-side socket logic is defined here in ./config/socketio.js
-// require('./config/socketio')(socketio);
-var socket = require('socket.io');
-var io = socket(server);
-
-io.on('connection', function(socket){
-
-  socket.on('move-pin', function(data){
-    // do stuff with data received from cliend
-
-    socket.emit('move-pin', data)
-    console.log('TESTING SOCKET.IO' + socket.id)
-
-  })
-})
-
-
-require('./config/express')(app);
-require('./routes')(app);
->>>>>>> Stashed changes
 
 server.listen(config.port, config.ip, function () {
   console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
@@ -66,6 +37,7 @@ server.listen(config.port, config.ip, function () {
 // require('./config/socketio')(socketio);
 //var socket = require('socket.io');
 //var io = socket(server);
+<<<<<<< Updated upstream
 
 //temporary inject roomsController here
 var RoomsController = require('./api/rooms/rooms.controller');
@@ -78,7 +50,18 @@ io.on('connection', function (socket) {
     console.log('inside socket connection ', data);
   });
 
+=======
 
+io.on('connection', function (socket) {
+  socket.emit('news', { hello: 'world' });
+  socket.on('my other event', function (data) {
+    console.log('inside socket connection ', data);
+  });
+});
+>>>>>>> Stashed changes
+
+/*io.on('connection', function(socket){
+  socket.emit('news', { hello: 'world' });
   socket.on('move-pin', function(data){
     // If it's new socket.id
     dataCollection[data._id] = data;
@@ -96,18 +79,26 @@ io.on('connection', function (socket) {
        info: 'How awesome',
        active: true
      };
+
+<<<<<<< Updated upstream
+     console.log('User Room Obj:', userRoomObj);
     //Update Database with new info (coords) but don't send data back
     //Data will be sent back from Data Cache for performance reasons
     RoomsController.updateRoom(userRoomObj, function(usersData) {
+      console.log('UPDATE ROOM - USRS DATA: ', usersData);
       //do something with usersData maybe
     });
     // Sendback all the data
     //dataCollection = {socket.id1:{longitude:num, latitude: num, roomNumber: num}, ..., socket.idN:{longitude:num, latitude:num, roomNumber: num}}
-    io.emit('move-pin-reply', dataCollection)
+    io.emit('move-pin-reply', dataCollection);
+=======
+    //socket.emit('move-pin', data);
+    console.log('TESTING SOCKET.IO' + socket.id)
+>>>>>>> Stashed changes
 
     // Testing
     //socket.emit('move-pin', data);
-    console.log('TESTING SOCKET.IO' + socket.id)
+    console.log('TESTING SOCKET.IO' + socket.id);
     console.dir(dataCollection);
 
   });
@@ -120,6 +111,7 @@ io.on('connection', function (socket) {
     };
     RoomsController.getUsersForRoom(userRoomObj, function(usersData) {
     //return object of objects indexed by userId
+    console.log('!!!!!!USERS DATA for ALL IN ROOM!!! ', usersData);
       io.emit('updateMapReply', usersData);
     });
 
@@ -130,12 +122,23 @@ io.on('connection', function (socket) {
     delete dataCollection[socket.id];
     io.emit('move-pin-reply', dataCollection);
   })
+<<<<<<< Updated upstream
 });
+=======
+})*/
+>>>>>>> Stashed changes
 
 
 require('./config/express')(app);
 require('./routes')(app);
 
+<<<<<<< Updated upstream
+=======
+// Start server/*
+/*server.listen(config.port, config.ip, function () {
+  console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
+});*/
+>>>>>>> Stashed changes
 
 // Expose app
 module.exports = app;
