@@ -26,3 +26,9 @@ Icon
 .floobit
 .floo
 .flooignore
+
+
+.bowerrc
+.buildignore
+.editorconfig
+.gitattributes
