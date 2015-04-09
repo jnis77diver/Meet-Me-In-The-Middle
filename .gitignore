@@ -4,3 +4,25 @@ public
 .idea
 client/bower_components
 /server/config/local.env.js
+
+.DS_Store
+.AppleDouble
+.LSOverride
+azure.err
+iisnode.yml
+
+# Icon must ends with two \r.
+Icon
+
+/*
+/*/
+!/dist/
+
+
+
+
+# Floobits
+.floo
+.floobit
+.floo
+.flooignore
