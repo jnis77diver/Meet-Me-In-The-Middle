@@ -19,8 +19,12 @@ var UserSchema = new Schema({
   twitter: {},
   google: {},
   github: {},
+<<<<<<< Updated upstream
   imageUrl: String,
   memberOfRooms: []
+=======
+  imageUrl: String
+>>>>>>> Stashed changes
 });
 
 /**
