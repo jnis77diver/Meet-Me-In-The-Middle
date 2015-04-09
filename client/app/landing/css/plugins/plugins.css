@@ -19,7 +19,7 @@
 .cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 
-/* 
+/*
     User Style:
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
@@ -30,14 +30,14 @@
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{background:rgba(255,255,255,1); padding:20px; border: 1px solid #fff; border-radius: 5px;}
-        #cboxLoadingGraphic{background:url(../../img/lightbox/loading.gif) no-repeat center center; background-color: #000; border-radius: 5px;}
+        #cboxLoadingGraphic{background:url(../../../../assets/images/lightbox/loading.gif) no-repeat center center; background-color: #000; border-radius: 5px;}
         #cboxLoadingOverlay{background:rgba(0,0,0,0);}
         #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
         #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
 
         /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../../img/lightbox/controls.png) no-repeat 0 0; display: none !important;}
-        
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../../../../assets/images/lightbox/controls.png) no-repeat 0 0; display: none !important;}
+
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
@@ -57,7 +57,7 @@
 
 /*****************************************************************************************************************************************************/
 /*****************************************************************************************************************************************************/
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 /*****************************************************************************************************************************************************/
@@ -98,7 +98,7 @@
   }
 }
 
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -109,7 +109,7 @@
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -204,7 +204,7 @@
   display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -219,7 +219,7 @@
   /*transform-style: preserve-3d;*/
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {
@@ -276,7 +276,7 @@
   z-index: 1;
 }
 
-/* 
+/*
  * 	Default theme - Owl Carousel CSS File
  */
 .owl-theme .owl-nav {

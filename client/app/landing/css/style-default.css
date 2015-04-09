@@ -689,7 +689,7 @@ fieldset[disabled] .btn {
 /*     5.1. Main header styles & layout-1 styles     */
 
 #header {
-  background: url(../img/header/bg03.jpg) fixed;
+  background: url(../../../assets/images/header/bg03.jpg) fixed;
   height: 100vh;
   max-height: 890px;
   min-height: 690px;
@@ -984,7 +984,7 @@ fieldset[disabled] .btn {
 
 ------------------------------------------------------------------*/
 #testimonials {
-  background: url(../img/parallax_bg/01.jpg);
+  background: url(../../../assets/images/parallax_bg/01.jpg);
   background-size: cover;
 }
 .carousel-element {
@@ -1062,7 +1062,7 @@ fieldset[disabled] .btn {
 
 ------------------------------------------------------------------*/
 #pricing {
-  background: url(../img/grey_bg/01.jpg) center bottom no-repeat;
+  background: url(../../../assets/images/grey_bg/01.jpg) center bottom no-repeat;
   min-height: 840px;
 }
 #pricing .container {
@@ -1230,7 +1230,7 @@ fieldset[disabled] .btn {
 
 ------------------------------------------------------------------*/
 #tabs {
-  background: url(../img/parallax_bg/01.jpg);
+  background: url(../../../assets/images/parallax_bg/01.jpg);
   background-size: cover;
   margin-bottom: 80px;
 }
@@ -1297,7 +1297,7 @@ fieldset[disabled] .btn {
 }
 #gallery .carousel-gallery .image span {
   display: inline-block;
-  background: #f46352 url(../img/02zoomin.png) center no-repeat;
+  background: #f46352 url(../../../assets/images/02zoomin.png) center no-repeat;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -1324,7 +1324,7 @@ fieldset[disabled] .btn {
 
 ------------------------------------------------------------------*/
 #funfacts {
-  background: #f3f3f3 url(../img/03pattern.png);
+  background: #f3f3f3 url(../../../assets/images/03pattern.png);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1370,7 +1370,7 @@ fieldset[disabled] .btn {
 /*     15.1. Contact form     */
 
 #contact {
-  background: url(../img/grey_bg/02.jpg) center bottom no-repeat;
+  background: url(../../../assets/images/grey_bg/02.jpg) center bottom no-repeat;
   min-height: 650px;
 }
 #contact h2 {

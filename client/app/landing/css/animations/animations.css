@@ -15,7 +15,7 @@
 #loading {
   height: 100vh;
   width: 100vw;
-  background: url(../../img/preloader.gif) center no-repeat;
+  background: url(../../../../assets/images/preloader.gif) center no-repeat;
 }
 @-webkit-keyframes rotating {
   from {

@@ -95,10 +95,10 @@ Primary use:	Themeforest premium HTML template
 @main-color-1-dark: hsl(hue(@main-color-1), saturation(@main-color-1) + 20%, lightness(@main-color-1) - 20%);       // Dark primary color
 
 
-@radius: 5px;                   // global border radius 
+@radius: 5px;                   // global border radius
 
 //HEADER
-@header-image: url(../img/header/bg03-blue.jpg);             // Header background image
+@header-image: url(../../../assets/images/header/bg03-blue.jpg);             // Header background image
 @header-overlay: fade(#000, 35%);                       // Header overlay color and opacity
 @header-color-1: fade((@main-color-1-light), 92%);      // Header solid color and opacity
 @header-color-2: fade((@main-color-1-dark), 92%);       // Sections solid color and opacity
@@ -106,10 +106,10 @@ Primary use:	Themeforest premium HTML template
 @header-img-right-margin: -100px;                       // Right margin of image in Header, Buttons & Image layout
 
 // SECTIONS
-@sections-img: url(../img/parallax_bg/01-blue.jpg);          // Sections background image
+@sections-img: url(../../../assets/images/parallax_bg/01-blue.jpg);          // Sections background image
 @sections-overlay: rgba(0,0,0,0.3);                     // Sections overlay and opacity
-@pricing-image: url(../img/grey_bg/01.jpg);             // Pricing section background image
-@contact-image: url(../img/grey_bg/02.jpg);             // Contact section background image
+@pricing-image: url(../../../assets/images/grey_bg/01.jpg);             // Pricing section background image
+@contact-image: url(../../../assets/images/grey_bg/02.jpg);             // Contact section background image
 
 
 
@@ -179,11 +179,11 @@ h6 {
     font-weight: 700;
 }
 ::selection {                   /* webkit */
-  background: @main-color-1; 
+  background: @main-color-1;
   color: @txt-color-4;
 }
 ::-moz-selection {              /* gecko */
-  background: @main-color-1; 
+  background: @main-color-1;
   color: @txt-color-4;
 }
 
@@ -1173,11 +1173,11 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 #pricing .offer-best .offer-buy .btn-info:hover {
     background: @main-color-1 - #333 !important;
-    border-color: @main-color-1 !important; 
+    border-color: @main-color-1 !important;
 }
 #pricing .offer-best .offer-buy .btn-info:active {
     background: @main-color-2 - #333 !important;
-    border-color: @main-color-2 !important; 
+    border-color: @main-color-2 !important;
 }
 
 
@@ -1214,7 +1214,7 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     margin-right: 5px;
 }
 #team .socialmedia a:last-of-type {
-    margin-right: 0px; 
+    margin-right: 0px;
 }
 #team .socialmedia a:hover {
     color: @txt-color-2;
@@ -1306,7 +1306,7 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 #gallery .carousel-gallery .image span {
     display: inline-block;
-    background: @main-color-1-light url(../img/02zoomin.png) center no-repeat;
+    background: @main-color-1-light url(../../../assets/images/02zoomin.png) center no-repeat;
     cursor: pointer;
     border-radius: @radius;
 }
@@ -1332,7 +1332,7 @@ box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 
 ------------------------------------------------------------------*/
 #funfacts {
-   background: @bg-second url(../img/03pattern.png);
+   background: @bg-second url(../../../assets/images/03pattern.png);
    text-align: center;
    margin-bottom: 50px;
 }
@@ -1482,7 +1482,7 @@ footer .sm {
     background: @main-color-2;
     position: relative;
     display: inline-block;
-    
+
     margin-right: 10px;
 }
 footer .sm:hover {
@@ -1527,10 +1527,10 @@ footer .sm span {
 @media all and (max-width: 991px){
     #mainmenu .btn {padding-left: 8px; padding-right: 8px;}
     #mainmenu .nav li a {padding-left: 8px; padding-right: 8px;}
-    
+
     #header {min-height: 650px;}
     .header-centred .header-margin-more {height: 20% !important;}
-    
+
     #about {padding-top: 40px; padding-bottom: 40px; margin-top: 0px; margin-bottom: 0px;}
     .about-to-right h3, .about-to-right p {text-align: left;}
     h3:after {max-width: 100%;}
@@ -1538,26 +1538,26 @@ footer .sm span {
     h2 {font-size: 2em;}
     #about h2 {margin-bottom: 30px;}
     #about .about-cont {padding: 20px 0 70px;}
-    
+
     #testimonials p {font-size: 1.25em; text-align: center; margin-top: 10px;}
     #testimonials .carousel-element {padding: 35px 0;}
     #testimonials .owl-prev, #testimonials .owl-next {display: none !important;}
     #testimonials h2 {margin-top: 20px !important;}
-    
+
     #pricing {margin-bottom: 60px;}
     #pricing .offer-best:before {display: none;}
     #pricing .offer .offer-features p {padding: 10px 0;}
     #pricing .offer-best {margin-top: 23px;}
     #pricing .offer-best .offer-name {font-size: 1.125em; padding: 12px 0;}
     #pricing .offer-best .offer-buy {padding: 16px 0;}
-    
+
     #contact .inline-input, .form-textarea {margin-right: auto; margin-left: auto; margin-bottom: 10px; width: 100%;}
     .form-horizontal .form-group {margin-left: 0px;}
     .caption-margin {margin-top: 0px;}
-    
+
     footer .sm {width:40px; height: 40px; margin-right: 5px;}
     footer .sm span {line-height: .5em;}
-    
+
     .anim-from-right, .anim-from-left  {margin-left: inherit !important; opacity: 1 !important;}
     .anim-fade, .anim-fade-down {opacity: 1 !important;}
     .anim-fade-down {margin-top: inherit !important;}
@@ -1573,9 +1573,9 @@ footer .sm span {
 
 @media all and (max-width: 768px){
     .main-menu li {background: @main-color-2 !important; font-size: 1.125em !important;}
-    
+
     .modal-dialog {max-width: none;}
-    
+
     #header header {text-align: center;}
     #header h1 {font-size: 5em !important;}
     #header .buttons-cont {text-align: center;}
@@ -1583,26 +1583,26 @@ footer .sm span {
     #header form button {width: 100% !important; max-width: none !important;}
     #header .header-more p {display: none;}
     #header .header-margin-more {height: 20% !important;}
-    
+
     .modal-header h5 {font-size: 1.25em;}
     .modal-header h6 {font-size: .875em;}
-    
+
     #tabs .nav-tabs li {width: 100% !important; border-left: 1px solid @txt-color-2 !important; border-radius: 0px;}
     #tabs .nav-tabs li:first-of-type {border-top-left-radius: @radius; border-top-right-radius: @radius;}
     #tabs .nav-tabs li:last-of-type {border-bottom-left-radius: @radius; border-bottom-right-radius: @radius;}
     #tabs .nav-tabs li a {padding: 15px 40px;}
-    
+
     #gallery .container {margin: 0 !important;}
     #gallery .row {margin-left: 0px;}
-    
+
     #funfacts .count {font-size: 3em;}
-    
+
     #contact-more .col-xs-12 {text-align: center;}
     #contact-more ul li span {float: none;}
-    
+
     footer {padding-top: 20px;}
     footer .container div:nth-child(1), footer .container div:nth-child(3) {text-align: center;}
-    
+
     .anim-from-right,
     .anim-from-left,
     .anim-fade-down,
@@ -1627,7 +1627,7 @@ footer .sm span {
     #header h1 {font-size: 4em !important;}
     #header h3 {font-size: 1.75em;}
     #header .header-margin {height: 20%;}
-    
+
     .header-countdown #countdown div p {font-size: 2em;}
     .header-more .elegant {font-size: 2.5em;}
 }
@@ -1639,14 +1639,14 @@ footer .sm span {
     #header .header-margin {height: 18%;}
     .logo-cont {width: 30%;}
     .logo-cont a img {width: 100%;}
-    
+
     #mainmenu .btn {font-size: .75em;}
     .navbar-toggle {padding: 12px 5px;}
     .main-menu .btn {margin-left: 4px;}
-    
+
     .header-countdown #countdown div {font-size: .875em; padding-top: 10px;}
     #contact-more ul li span {width: 100%;}
-    
+
     #header .header-txt-small {font-size: .5em;}
     #header h1 {font-size: 3.5em;}
     #header h3 {font-size: 1.5em; margin-top: 10px;}

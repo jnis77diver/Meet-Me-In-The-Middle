@@ -102,7 +102,7 @@ exports.update = function(req, res) {
   console.log('called update');
   var userId = req.body.user._id;
   var roomId = req.body.roomId;
-  Rooms.findById(roomId, function (err, room) {
+    Rooms.findById(roomId, function (err, room) {
     if (err) { return handleError(res, err); }
     if(!room) { return res.send(404); }
     var roomName = room.name;
